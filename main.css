@@ -10,9 +10,19 @@ body {
 background-color: black;
 color: gold;
 }
+@font-face {
+    font-family: "Horror";
+    src: url('./BloodyTerror-GOW9Z.ttf') format('truetype');
+    /* You might want to add other font formats for better browser compatibility */
+    font-weight: normal;
+    font-style: normal;
+}
 header{
     padding:5rem;
     text-align: center;
+    font-family: Horror;
+    font-size: 2rem;
+    letter-spacing: 6px;
 }
 table{
     border-collapse: collapse;
@@ -30,4 +40,27 @@ th,td{
 }
 td:nth-child(5){
     text-align:right;
+}
+.loader {
+    background-color: green;       /* Sets the background color to green */
+    position: absolute;           /* Positions the element absolutely relative to its nearest positioned ancestor */
+    top: 70%;                    /* Positions the top edge at 50% of the containing element's height */
+    left: 15%;                   /* Positions the left edge at 30% of the containing element's width */
+    padding: 1rem;               /* Adds 1rem (root em) of padding inside the element */
+    transform: translate(50%, -50%); /* Moves the element 50% right and 50% up of its own width/height */
+    font-size: 1.5rem;           /* Sets the font size to 1.5 times the root element's font size */
+    border: solid 2px gold;      /* Adds a 2px solid gold border */
+    font-family: Horror;     
+    display: none;    /* Sets the font family to "Horror" (assuming this font is defined elsewhere) */
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 2rem  0;
 }
