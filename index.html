@@ -12,8 +12,9 @@
     <header>
         <h1>Stephen king library</h1>
     </header>
-    <main id="table">
-        <table id="king-books">
+    <main>
+        <table id="table">
+            <thead>
             <tr>
                 <th>Title</th>
                 <th>Year</th>
@@ -21,18 +22,16 @@
                 <th>ISBN</th>
                 <th>Pages</th>
                 <th>Notes</th>
-                <th>created_at</th>
-                <th>villains- count</th>
-                <th>Notes</th>
-            </tr>
-
+              </tr>
+        </thead>
+        <tbody id="king-books"></tbody>
         </table>
     </main>
     <footer>
         <p>&copy;2025</p>
     </footer>
 
-    <div class="loader">Waiting for characters to be killed...</div>
+    <div id="loader">Waiting for characters to be killed...</div>
 <script src="/script.js" type="module"></script>
 </body>
 
